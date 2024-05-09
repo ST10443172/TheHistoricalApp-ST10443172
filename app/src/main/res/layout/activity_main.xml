@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/african_historical_app2"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="331dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Enter Year"
+        android:inputType="number"
+        android:textColorLink="#050404"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#B4BBA8"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="19dp"
+        android:padding="16dp"
+        android:text="History event details will appear here"
+        android:textColor="#62581D"
+        android:textColorLink="#AFC1B1"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#ACB6A3"
+        android:text="Generate History"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
